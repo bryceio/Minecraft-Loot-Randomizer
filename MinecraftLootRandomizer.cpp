@@ -76,5 +76,7 @@ int main() {
 	outputStream.open("pack.mcmeta");
 	outputStream << "{\n   \"pack\" : {\n      \"pack_format\": " << packFormat << ",\n";
 	outputStream << "      \"description\": \"A randomized loot table pack made using bryceio\'s randomizer.\"\n   }\n}" << std::endl;
+	outputStream.close();
+	outputStream.clear();
 	return 0;
 }
